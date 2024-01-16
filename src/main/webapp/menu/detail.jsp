@@ -1,0 +1,93 @@
+<%@page import="kr.co.rland.web.menu.Menu"%>
+<%-- <%@page import="kr.co.rland.web.menu.MenuList"%> --%>
+<%@page import="kr.co.rland.web.menu.MenuRepository"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <header>
+        <h1>Rland</h1>
+        <span>
+            <a href=""><img src="" alt="장바구니"></a>
+            <a href=""><img src="" alt="마이페이지"></a>
+        </span>
+    </header>
+    <article>
+        <!-- <h1>메뉴 상세페이지</h1> -->
+        <h1>${menu.getKorName()}</h1>
+        <img src="../menu/image/coffee.png" alt="${menu.getImage()}"><br>
+        <small>${menu.getEngName()}</small>
+        <button>하트</button>${menu.getLike()}<br>
+        <p>알랜드만의 로스팅 기법으로 볶은 원두를 사용하여<br> 추출된 풍부한 에스프레소와 신선한 우유가 어우러진 대표 라떼</p>
+        <b>${menu.getPrice()}</b>
+        <form action="">
+            <!-- <b>크기 선택</b> -->
+            <fieldset>
+                <legend>크기 선택</legend>
+                <label for="">Small</label>
+                <input type="radio" name="size" value="1">
+                <label for="">Large</label>
+                <input type="radio" name="size" value="2">
+            </fieldset>
+            <!-- <b>옵션</b> -->
+            <fieldset>
+                <legend>옵션</legend>
+                <label for="">HOT</label>
+                <input type="radio" name="option">
+                <label for="">ICED</label>
+                <input type="radio" name="option">
+            </fieldset>
+            <input type="number" min="1">
+        </form>
+        <button>-</button>
+        <input type="text">
+        <button>+</button>
+        <hr>
+    </article>
+    <div>
+        <button>담기</button>
+        <button>주문하기</button>
+    </div>
+
+    <section>
+        <h1>함께 추천 드리는 메뉴</h1>
+        <hr>
+        <article>
+            <a href="detail.html"><img src="../menu/image/chocochip.png" alt="초코칩쿠키" width="150px"></a><br>
+            <h1>초코칩 쿠키</h1>
+            <small>Chocochip Cookie</small><br>
+            <b>4,500원</b>
+            <input type="button" value="하트"> <br>
+            <!-- <button>하트</button>2 <br> -->
+        </article>
+        <article>
+            <a href="detail.html"><img src="../menu/image/almond.png" alt="아몬드쿠키" width="150px"></a><br>
+            <h1>아몬드 쿠키</h1>
+            <small>Almond Cookie</small><br>
+            <b>4,500원</b>
+            <input type="button" value="하트"> <br>
+            <!-- <button>하트</button>2 <br> -->
+        </article>
+        <article>
+            <a href="detail.html"><img src="../menu/image/egg sandwitch.png" alt="에그 샌드위치" width="150px"></a><br>
+            <h1>에그 샌드위치</h1>
+            <small>Egg Sandwitch</small><br>
+            <b>4,500원</b>
+            <input type="button" value="하트"> <br>
+            <!-- <button>하트</button>2 <br> -->
+        </article>
+    </section>
+
+    <footer>
+        <h2>사업자 정보</h2>
+        <p>사업자 등록번호: 123-45-67</p>
+        <p>2023 Rland Newlecture ALL Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+id,korName,engName,price,like,img,type
+1,아메리카노,Americano,2000,0,ameri.png,1
+2,카페라떼,caffelatte,3000,2,latte.png,1
+3,쿨라임피지오,cool,3000,0,cool.png,2
+4,딸기피지오,stracool,3000,0,cool.png,2
+5,배피지오,pearcool,3000,0,cool.png,2
+6,사과피지오,appcool,3000,0,cool.png,2
+7,딸기라떼,sla,7000,0,sla.png,1
+8,아이스티,ice,3000,0,cool.png,3
+9,홍차,hong,3000,0,cool.png,3
+10,아이스홍차,ice tea,3000,0,cool.png,3
+11,몰라차,don,3000,0,cool.png,3
+0,아무나무,amumu,4500,0,amumu.png
+0,작은나무,shorttree,3000,0,shorttree.png
